@@ -1,5 +1,5 @@
 
-## Building
+## Building workflow (for new versions)
 
 When building a new version of an image, follow these steps:
 
@@ -19,3 +19,13 @@ When building a new version of an image, follow these steps:
 5. Push the new version tagged image
 
         docker push psamsotha/aws-eb-javase-mvn:<version>
+
+6. If everything went well, tag the Git repo and push the tag
+
+        git tag -a <tag: v0.1.0> -m 'version <version: 0.1.0>'
+        git push origin <tag: v0.1.0>
+
+
+## TODO
+
+* Set up automated builds on Docker Hub and update workflow
