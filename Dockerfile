@@ -1,6 +1,8 @@
 # syntax=docker/dockerfile:1
-# AWS Elastic Beanstalk EC2 Java SE 8 environment for development
-# - Maven included: 3.3.3 is current version used in EB EC2
+
+LABEL version="0.1.0"
+LABEL maintainer="https://github.com/psamsotha"
+LABEL description="AWS Elastic Beanstalk EC2 Java SE 8 environment for development (w/Maven)"
 
 FROM amazonlinux:2
 
